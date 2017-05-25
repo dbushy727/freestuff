@@ -42,3 +42,31 @@ Done!
 - GET /listing-images/{id}
 - PUT /listing-images/{id}
 - DELETE /listing-images/{id}
+
+
+## Sample Request/Response
+
+    Request: GET /listings/4
+    HTTP Status: 200
+    Content-Type: application/json
+
+    {
+      "id": 4,
+      "name": "nihil",
+      "slug": "nihil",
+      "zip_code": "34017-1966",
+      "description": "Voluptate sapiente consequatur voluptatem quisquam possimus fuga dignissimos. Quisquam sequi sunt qui doloribus. Omnis ea pariatur et eveniet sunt qui.",
+      "is_active": true,
+      "published_at": "2017-05-25 01:08:51",
+      "created_at": "2017-05-25 01:08:51",
+      "updated_at": "2017-05-25 01:08:51",
+      "images": [
+        {
+          "id": 4,
+          "listing_id": "4",
+          "path": "http://lorempixel.com/300/300/?39278",
+          "created_at": "2017-05-25 01:08:51",
+          "updated_at": "2017-05-25 01:08:51"
+        }
+      ]
+    }
