@@ -17,6 +17,7 @@ Generate App Key for encryption (necessary)
 
 Create Database and run seeds
 
+    $ touch database/database.sqlite
     $ php artisan migrate:refresh --seed
 
 Done!
