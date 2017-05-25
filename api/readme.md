@@ -7,7 +7,7 @@ Clone the repo
     $ git clone git@github.com:dbushy727/freestuff.git
     $ cd freestuff/api
 
-Install Composer
+Install dependencies via Composer
 
     $ composer install
 
