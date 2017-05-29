@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Listing extends Model
 {
     public $fillable = [
+        'user_id',
         'name',
         'slug',
         'zip_code',
@@ -22,6 +23,11 @@ class Listing extends Model
     public function images()
     {
         return $this->hasMany('App\Model\ListingImage');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo('App\Model\User');
     }
 
     public function activate()

@@ -44,4 +44,9 @@ abstract class Repo implements RepoInterface
 
         return $model;
     }
+
+    public function firstOrCreate($data)
+    {
+        return $this->model->firstOrCreate($data);
+    }
 }

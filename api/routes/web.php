@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('login/facebook', 'Auth\LoginController@redirectToFacebook');
+Route::get('login/facebook/callback', 'Auth\LoginController@handleFacebookCallback');
+
 Route::get('/listings', 'ListingController@index');
 Route::post('/listings', 'ListingController@store');
 Route::get('/listings/{id}', 'ListingController@show');
